@@ -4,14 +4,12 @@ This is our hackathon project, where we will build a middleman platform to allow
 
 ### Built With:
 * [Vue](https://vuejs.org/)
-* [Python](https://github.com/go-chi/chi)
-* [Fla](https://www.mongodb.com/cloud/atlas)
+* [Python](https://www.python.org)
+* [Flask](https://flask.palletsprojects.com/en/stable/)
 
 ## Home Page Dark Mode
-<img width="956" alt="project-screenshot2" src="https://github.com/user-attachments/assets/4dfa7374-5ba7-423b-96ee-f863f3ffa668">
+![ee hackathon project image 1](https://github.com/user-attachments/assets/ca97ce6f-3764-4673-bb50-8251c3ca9348)
 
-## Home Page Light Mode
-<img width="959" alt="project-screenshot3" src="https://github.com/user-attachments/assets/43ded8ed-78e6-44e3-9a13-9a192209423d">
 
 ## View api here:
 *To add later*
