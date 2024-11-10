@@ -3,7 +3,6 @@
 </script>
 
 <template>
-<<<<<<< HEAD
     <div class="about-section">
         <h1>About us</h1>
         <p>A little intro to the team.</p>
@@ -50,67 +49,6 @@
                     <p>School attended</p>
                 </div>
             </div>
-=======
-    <h1>
-        About Us
-    </h1>
-    <div class="content-box">
-        
-
-        <div class="fullteam-box">
-            <img src="/public/team_profiles/theTeam.jpg" alt="Group photo" class="wide-photo">
-            <div class="overlay-text">
-                <h2>Excess Express</h2>
-                <p>From humble beginnings to a thriving team, we are proud of our journey.</p>
-            </div>
-        </div>
-        
-        <p>
-            Meet the Team
-        </p>
-        
-        <div class="team-container">
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
-                <div class="photo-caption">
-                <h3>Team Member 1</h3>
-                <p>Role: Role 1</p>
-                <p>Bio: This is a short bio for team member 1.</p>
-                </div>
-            </div>
-            </div>
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/myHeadshot.jpg" alt="Team member photo">
-                <div class="photo-caption">
-                <h3>Team Member 2</h3>
-                <p>Role: Role 2</p>
-                <p>Bio: This is a short bio for team member 2.</p>
-                </div>
-            </div>
-            </div>
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/chris_yuen_headshot_zoom.jpg" alt="Team member photo">
-                <div class="photo-caption">
-                <h3>Team Member 3</h3>
-                <p>Role: Role 3</p>
-                <p>Bio: This is a short bio for team member 3.</p>
-                </div>
-            </div>
-            </div>
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
-                <div class="photo-caption">
-                <h3>Team Member 4</h3>
-                <p>Role: Role 4</p>
-                <p>Bio: This is a short bio for team member 4.</p>
-                </div>
-            </div>
-            </div>
->>>>>>> f2e12f2efd9e5ff5b0450508b9952711bf43ce47
         </div>
     </div>
 </template>
