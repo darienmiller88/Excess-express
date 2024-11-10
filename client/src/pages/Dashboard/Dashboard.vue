@@ -13,7 +13,7 @@ interface Listing {
 const listings = ref<Listing[]>([
     {
         id: 1,
-        logo: "/public/logos",
+        logo: "/public/logos/McDonalds.png",
         companyName: 'McDonalds',
         distance: 5,
         surplus: 100,
@@ -21,7 +21,7 @@ const listings = ref<Listing[]>([
     },
     {
         id: 2,
-        logo: 'path/to/logo2.png',
+        logo: '/public/logos/burger_king.png',
         companyName: 'Burger King',
         distance: 10,
         surplus: 200,
@@ -29,7 +29,7 @@ const listings = ref<Listing[]>([
     },
     {
         id: 3,
-        logo: 'path/to/logo2.png',
+        logo: '/public/logos/Chick.png',
         companyName: 'Chick-fil-A',
         distance: 10,
         surplus: 200,
@@ -37,7 +37,7 @@ const listings = ref<Listing[]>([
     },
     {
         id: 4,
-        logo: 'path/to/logo2.png',
+        logo: '/public/logos/Wawa.png',
         companyName: 'Wawa',
         distance: 10,
         surplus: 200,
@@ -45,7 +45,7 @@ const listings = ref<Listing[]>([
     },
     {
         id: 5,
-        logo: 'path/to/logo2.png',
+        logo: '/public/logos/wendy.png',
         companyName: "Wendy's",
         distance: 10,
         surplus: 200,
@@ -53,7 +53,7 @@ const listings = ref<Listing[]>([
     },
     {
         id: 6,
-        logo: 'path/to/logo2.png',
+        logo: '/public/logos/popeyes.png',
         companyName: 'Popeyes',
         distance: 10,
         surplus: 200,
@@ -61,7 +61,7 @@ const listings = ref<Listing[]>([
     },
     {
         id: 7,
-        logo: 'path/to/logo2.png',
+        logo: '/public/logos/kfc.png',
         companyName: 'KFC',
         distance: 10,
         surplus: 200,
@@ -69,8 +69,40 @@ const listings = ref<Listing[]>([
     },
     {
         id: 8,
-        logo: 'path/to/logo2.png',
+        logo: '/public/logos/starbucks.png',
         companyName: 'Starbucks',
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 9,
+        logo: '/public/logos/tacobell.png',
+        companyName: "Taco Bell",
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 10,
+        logo: '/public/logos/shakeshack.png',
+        companyName: 'Shake Shack',
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 11,
+        logo: '/public/logos/dominos.png',
+        companyName: "Domino's",
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 12,
+        logo: '/public/logos/dunkin.png',
+        companyName: "Dunkin' Donuts",
         distance: 10,
         surplus: 200,
         expirationDate: '2023-11-30'
@@ -107,7 +139,7 @@ const connectWithBusiness = (id: number) => {
     flex-wrap: wrap;
     gap: 20px;
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 20px 20px; /* Increased left and right padding */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
@@ -135,8 +167,8 @@ const connectWithBusiness = (id: number) => {
 }
 
 .company-logo {
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     object-fit: cover;
     margin-right: 8px;
 }
