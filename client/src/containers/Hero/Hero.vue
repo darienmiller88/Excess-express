@@ -48,7 +48,7 @@
             }
 
             button{
-                background-color: #FFBF23;
+                background-color: var(--goldenrod);
                 border: 1px black solid;
                 transition: 0.3s;
                 font-size: 18px;
@@ -57,7 +57,7 @@
 
                 &:hover{
                     background-color: black;
-                    color: #FFBF23;
+                    color: var(--goldenrod);
                 }
             }
         }
