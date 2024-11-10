@@ -31,24 +31,24 @@
                 <p>Bio: This is a short bio for team member 1.</p>
                 </div>
             </div>
-            </div>
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/myHeadshot.jpg" alt="Team member photo">
-                <div class="photo-caption">
-                <h3>Team Member 2</h3>
-                <p>Role: Role 2</p>
-                <p>Bio: This is a short bio for team member 2.</p>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="" alt="" style="width:100%">
+                <div class="container">
+                    <h2>Jane Doe</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>School attended</p>
                 </div>
             </div>
-            </div>
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/chris_yuen_headshot_zoom.jpg" alt="Team member photo">
-                <div class="photo-caption">
-                <h3>Team Member 3</h3>
-                <p>Role: Role 3</p>
-                <p>Bio: This is a short bio for team member 3.</p>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="" alt="" style="width:100%">
+                <div class="container">
+                    <h2>Jane Doe</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>School attended</p>
                 </div>
             </div>
             </div>
