@@ -38,7 +38,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: white;
-        padding: 30px;
+        padding: 30px 60px;
         color: black;
         
         .logo-wrapper{
@@ -46,8 +46,7 @@
             align-items: center;
             
             width: fit-content;
-            // border: 3px red solid;
-            // margin-left: 120px;
+            margin-left: 20px;
             color:black;
 
             &:hover{
@@ -62,8 +61,6 @@
             }
 
             .app-wrapper{
-                // border: 3px dotted blue;
-
                 .app-name{
                     font-weight: bold;
                     font-size: 30px;
@@ -73,7 +70,7 @@
 
         .links{
             display: flex;
-            margin-right: 110px;
+            margin-right: 90px;
  
             .link{
                 padding: 20px 30px;
