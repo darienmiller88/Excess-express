@@ -9,8 +9,6 @@
         listing: Listing;
         isButtonDisabled: boolean;
     }>();
-
-    
 </script>
 
 <template>  

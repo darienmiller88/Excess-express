@@ -7,7 +7,7 @@ export const chosenListingsStore = defineStore("chosen_listings", () => {
 
     // Adds a listing to local storage, maxes at only 3.
     const addListing = (listing: Listing) => {
-        if (chosenListings.value.length > 3) {
+        if (chosenListings.value.length >= 3) {
             return
         }
 
@@ -15,10 +15,9 @@ export const chosenListingsStore = defineStore("chosen_listings", () => {
     }
 
     const removeListing = (listingToRemove: Listing) => {
-        chosenListings.value = chosenListings.value.filter(listing => listing.companyName != listingToRemove.companyName)
-        
-        console.log("array after remove:", chosenListings.value);
-        
+        if (chosenListings.value.length > 0) {
+            chosenListings.value = chosenListings.value.filter(listing => listing.companyName != listingToRemove.companyName)        
+        }
     }
 
     return { chosenListings, addListing, removeListing }
