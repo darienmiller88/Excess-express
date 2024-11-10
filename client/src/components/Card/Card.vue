@@ -1,14 +1,16 @@
 <script setup lang="ts">
     import { Listing } from "../../types/types"
+    import { chosenListingsStore } from "../../stores/stores"
+    // import { storeToRefs } from "pinia";
     
+    // const { chosenListings } = storeToRefs(chosenListingsStore())
+    const { addListing, removeListing } = chosenListingsStore()
     const props = defineProps<{
         listing: Listing;
         isButtonDisabled: boolean;
     }>();
 
-    const connectWithBusiness = (id: number) => {
-        console.log(`Connecting with business ID: ${id}`);
-    };
+    
 </script>
 
 <template>  
@@ -20,8 +22,8 @@
         <p>Distance: {{ props.listing.distance }} miles</p>
         <p>Surplus: {{ props.listing.surplus }} units</p>
         <p>Expiration Date: {{ props.listing.expirationDate }}</p>
-        <button v-if="!isButtonDisabled" class="add" @click="connectWithBusiness(props.listing.id)">Connect</button>
-        <button v-else class="remove">Remove</button>
+        <button v-if="!isButtonDisabled" class="add" @click="() => addListing(listing)">Connect</button>
+        <button v-else class="remove" @click="() => removeListing(listing)">Remove</button>
     </div>
 </template>
 

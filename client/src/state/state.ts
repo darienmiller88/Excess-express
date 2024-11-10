@@ -1,5 +1,7 @@
 import { Listing } from "../types/types"
 
+export const maxTickets = 3
+
 export const listings: Listing[] = [
     {
         id: 1,

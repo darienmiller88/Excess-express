@@ -1,18 +1,16 @@
 <script setup lang="ts">
-    import { onMounted, ref } from 'vue';
+    import { computed } from 'vue';
     import { listings } from '../../state/state';
     import { storeToRefs } from 'pinia';
     import { chosenListingsStore } from '../../stores/stores';
     import Card from '../../components/Card/Card.vue';
-    import { Listing } from '../../types/types';
 
     const { chosenListings } = storeToRefs(chosenListingsStore())
-    const availableListings = ref<Listing[]>([])
-    
-    onMounted(() => {
-        //When the page is loaded, remove the chosen listings from all of the listings.
-        availableListings.value = availableListings.value.filter((listing: Listing) => !chosenListings.value.includes(listing))
-    })
+    const availableListings = computed(() => {
+        return listings.filter(
+            listing => !chosenListings.value.some(chosenListing => chosenListing.companyName === listing.companyName)
+        );
+    });
 </script>
 
 <template>
@@ -20,7 +18,7 @@
         Available Surplus 
     </h1>
     <div class="dashboard">
-        <div v-for="listing in listings" :key="listing.id" class="card">
+        <div v-for="listing in availableListings" :key="listing.id" class="card">
             <Card :listing="listing" :isButtonDisabled="false"/>
         </div>
     </div>

@@ -15,9 +15,10 @@ export const chosenListingsStore = defineStore("chosen_listings", () => {
     }
 
     const removeListing = (listingToRemove: Listing) => {
-        if (chosenListings.value.length > 0) {
-            chosenListings.value = chosenListings.value.filter(listing => listing.companyName === listingToRemove.companyName)
-        }
+        chosenListings.value = chosenListings.value.filter(listing => listing.companyName != listingToRemove.companyName)
+        
+        console.log("array after remove:", chosenListings.value);
+        
     }
 
     return { chosenListings, addListing, removeListing }
