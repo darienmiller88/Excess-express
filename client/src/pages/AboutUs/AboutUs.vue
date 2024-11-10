@@ -3,17 +3,17 @@
 </script>
 
 <template>
-    <h1>
-        About Us
-    </h1>
+
     <div class="content-box">
-        
+        <h1>
+            About Us
+        </h1>
 
         <div class="fullteam-box">
             <img src="/public/team_profiles/theTeam.jpg" alt="Group photo" class="wide-photo">
             <div class="overlay-text">
                 <h2>Excess Express</h2>
-                <p>From humble beginnings to a thriving team, we are proud of our journey.</p>
+                <p>We are committed to reducing waste and promoting sustainability.</p>
             </div>
         </div>
         
@@ -69,8 +69,10 @@
 </template>
 
 <style scoped>
-    h1{
-        color: antiquewhite;
+    h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
         text-align: center;
     }
     h2 {
@@ -126,10 +128,10 @@
     }
     .overlay-text {
         position: absolute;
-        top: 15%; /* Adjusted to move the text up */
+        bottom: 0; /* Align the bottom of the overlay with the bottom of the wide-photo */
         left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
+        transform: translateX(-50%); /* Center horizontally */
+        color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.001), rgba(255, 255, 255, 0.7)); /* Gradient background */
         backdrop-filter: blur(5px); /* Background blur */
