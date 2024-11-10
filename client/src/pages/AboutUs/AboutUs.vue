@@ -54,7 +54,7 @@
             </div>
             <div class="team-body">
             <div class="photo-caption">
-                <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
+                <img src="/public/team_profiles/photo_darien_miller.jpg" alt="Team member photo">
                 <div class="photo-caption">
                 <h3>Team Member 4</h3>
                 <p>Role: Role 4</p>
