@@ -13,7 +13,7 @@
         
         <div class="team-body">
             <div class="photo-caption">
-            <img src="/path/to/photo1.jpg" alt="Team member photo">
+            <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
             <div class="photo-caption">
                 <h3>Team Member 1</h3>
                 <p>Role: Role 1</p>
@@ -23,7 +23,7 @@
         </div>
         <div class="team-body">
             <div class="photo-caption">
-            <img src="/path/to/photo2.jpg" alt="Team member photo">
+            <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
             <div class="photo-caption">
                 <h3>Team Member 2</h3>
                 <p>Role: Role 2</p>
@@ -33,7 +33,7 @@
         </div>
         <div class="team-body">
             <div class="photo-caption">
-            <img src="/path/to/photo3.jpg" alt="Team member photo">
+            <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
             <div class="photo-caption">
                 <h3>Team Member 3</h3>
                 <p>Role: Role 3</p>
@@ -43,7 +43,7 @@
         </div>
         <div class="team-body">
             <div class="photo-caption">
-            <img src="/path/to/photo4.jpg" alt="Team member photo">
+            <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
             <div class="photo-caption">
                 <h3>Team Member 4</h3>
                 <p>Role: Role 4</p>
@@ -68,6 +68,11 @@
         margin: 1%;
         vertical-align: top;
         text-align: center;
+        .photo-caption img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
     }
 
 </style>
