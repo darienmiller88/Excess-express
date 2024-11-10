@@ -13,8 +13,8 @@ interface Listing {
 const listings = ref<Listing[]>([
     {
         id: 1,
-        logo: 'path/to/logo1.png',
-        companyName: 'Company A',
+        logo: "/public/logos",
+        companyName: 'McDonalds',
         distance: 5,
         surplus: 100,
         expirationDate: '2023-12-31'
@@ -22,7 +22,55 @@ const listings = ref<Listing[]>([
     {
         id: 2,
         logo: 'path/to/logo2.png',
-        companyName: 'Company B',
+        companyName: 'Burger King',
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 3,
+        logo: 'path/to/logo2.png',
+        companyName: 'Chick-fil-A',
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 4,
+        logo: 'path/to/logo2.png',
+        companyName: 'Wawa',
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 5,
+        logo: 'path/to/logo2.png',
+        companyName: "Wendy's",
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 6,
+        logo: 'path/to/logo2.png',
+        companyName: 'Popeyes',
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 7,
+        logo: 'path/to/logo2.png',
+        companyName: 'KFC',
+        distance: 10,
+        surplus: 200,
+        expirationDate: '2023-11-30'
+    },
+    {
+        id: 8,
+        logo: 'path/to/logo2.png',
+        companyName: 'Starbucks',
         distance: 10,
         surplus: 200,
         expirationDate: '2023-11-30'
@@ -35,15 +83,16 @@ const connectWithBusiness = (id: number) => {
 };
 </script>
 
-
 <template>
     <h1>
         Dashboard
     </h1>
     <div class="dashboard">
         <div v-for="listing in listings" :key="listing.id" class="card">
-            <img :src="listing.logo" alt="Company Logo" class="company-logo">
-            <h2>{{ listing.companyName }}</h2>
+            <div class="card-header">
+                <img :src="listing.logo" alt="Company Logo" class="company-logo">
+                <h2>{{ listing.companyName }}</h2>
+            </div>
             <p>Distance: {{ listing.distance }} miles</p>
             <p>Surplus: {{ listing.surplus }} units</p>
             <p>Expiration Date: {{ listing.expirationDate }}</p>
@@ -52,27 +101,44 @@ const connectWithBusiness = (id: number) => {
     </div>
 </template>
 
-
 <style scoped>
 .dashboard {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-.dashboard {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
 }
 
 .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 8px;
 }
 
 h1 {
@@ -93,38 +159,20 @@ p {
 }
 
 button {
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    width: 200px;
-    text-align: center;
-}
-
-.company-logo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 8px;
-}
-
-button {
     background-color: #007bff;
     color: white;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.95);
 }
 </style>
