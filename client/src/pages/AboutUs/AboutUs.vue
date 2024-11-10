@@ -17,50 +17,52 @@
             </div>
         </div>
         
-        <p>
-            Meet the Team
-        </p>
-        
-        <div class="team-container">
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/Headshot.jpeg" alt="Team member photo">
+        <div class="bottom-section">
+            <h2>
+                Meet the Team
+            </h2>
+
+            <div class="team-container">
+                <div class="team-body">
                 <div class="photo-caption">
-                <h3>Team Member 1</h3>
-                <p>Role: Role 1</p>
-                <p>Bio: This is a short bio for team member 1.</p>
+                    <img src="/public/team_profiles/Headshot.jpeg" alt="Team member photo">
+                    <div class="photo-caption">
+                    <h3>Thaddeus</h3>
+                    <p>Role: Role 1</p>
+                    <p>Bio: This is a short bio for team member 1.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/myHeadshot.jpg" alt="Team member photo">
-                <div class="photo-caption">
-                <h3>Team Member 2</h3>
-                <p>Role: Role 2</p>
-                <p>Bio: This is a short bio for team member 2.</p>
-                </div>
-            </div>
             </div>
             <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/chris_yuen_headshot_zoom.jpg" alt="Team member photo">
                 <div class="photo-caption">
-                <h3>Team Member 3</h3>
-                <p>Role: Role 3</p>
-                <p>Bio: This is a short bio for team member 3.</p>
+                    <img src="/public/team_profiles/myHeadshot.jpg" alt="Team member photo">
+                    <div class="photo-caption">
+                    <h3>Team Member 2</h3>
+                    <p>Role: Role 2</p>
+                    <p>Bio: This is a short bio for team member 2.</p>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="team-body">
-            <div class="photo-caption">
-                <img src="/public/team_profiles/photo_darien_miller.jpg" alt="Team member photo">
+                </div>
+                <div class="team-body">
                 <div class="photo-caption">
-                <h3>Team Member 4</h3>
-                <p>Role: Role 4</p>
-                <p>Bio: This is a short bio for team member 4.</p>
+                    <img src="/public/team_profiles/chris_yuen_headshot_zoom.jpg" alt="Team member photo">
+                    <div class="photo-caption">
+                    <h3>Christopher Yuen</h3>
+                    <p>Role: Role 3</p>
+                    <p>Bio: This is a short bio for team member 3.</p>
+                    </div>
                 </div>
-            </div>
+                </div>
+                <div class="team-body">
+                <div class="photo-caption">
+                    <img src="/public/team_profiles/photo_darien_miller.jpg" alt="Team member photo">
+                    <div class="photo-caption">
+                    <h3>Darien</h3>
+                    <p>Role: Role 4</p>
+                    <p>Bio: This is a short bio for team member 4.</p>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
@@ -71,8 +73,16 @@
         color: antiquewhite;
         text-align: center;
     }
-    p{
+    h2 {
         text-align: center;
+        font-size: 2em; /* Scale up the font size */
+    }
+    p {
+        text-align: center
+    }
+    .overlay-text p {
+        text-align: center;
+        font-size: 1em;
     }
     .team-container {
         display: flex;
@@ -126,6 +136,14 @@
         padding: 10px;
         border-radius: 10px;
         box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    }
+
+    .bottom-section {
+        background-color: rgba(245, 245, 245, 0.1); /* Slightly whitish gray background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+        margin-top: 20px;
     }
 
 </style>
