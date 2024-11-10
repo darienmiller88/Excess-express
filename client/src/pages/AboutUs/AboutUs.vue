@@ -37,8 +37,8 @@
                 <div class="photo-caption">
                     <img src="/public/team_profiles/myHeadshot.jpg" alt="Team member photo">
                     <div class="photo-caption">
-                    <h3>Team Member 2</h3>
-                    <p>Role: Role 2</p>
+                    <h3>Fathia</h3>
+                    <p>Frontend Dev</p>
                     <p>Bio: This is a short bio for team member 2.</p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <img src="/public/team_profiles/chris_yuen_headshot_zoom.jpg" alt="Team member photo">
                     <div class="photo-caption">
                     <h3>Christopher Yuen</h3>
-                    <p>Role: Role 3</p>
+                    <p>Frontend Dev</p>
                     <p>Bio: This is a short bio for team member 3.</p>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <img src="/public/team_profiles/photo_darien_miller.jpg" alt="Team member photo">
                     <div class="photo-caption">
                     <h3>Darien</h3>
-                    <p>Role: Role 4</p>
+                    <p>Full Stack Dev</p>
                     <p>Bio: This is a short bio for team member 4.</p>
                     </div>
                 </div>
@@ -109,6 +109,7 @@
         border-radius: 10px;
         background-color: rgba(249, 249, 249, 0.3); /* Set background to be semi-transparent */
         margin-top: 10px;
+        color: black;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     }
     .fullteam-box {
