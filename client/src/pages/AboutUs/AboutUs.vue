@@ -11,16 +11,46 @@
             We are Excess Express.
         </p>
         
-        <div class="team-member" v-for="n in 4" :key="n">            
+        <div class="team-body">
             <div class="photo-caption">
-            <img :src="'/path/to/photo' + n + '.jpg'" alt="Team member photo">
+            <img src="/path/to/photo1.jpg" alt="Team member photo">
             <div class="photo-caption">
-            <h3>Team Member {{ n }}</h3>
-            <p>Role: Role {{ n }}</p>
-            <p>Bio: This is a short bio for team member {{ n }}.</p>
+                <h3>Team Member 1</h3>
+                <p>Role: Role 1</p>
+                <p>Bio: This is a short bio for team member 1.</p>
+            </div>
+            </div>
         </div>
-    </div>
-    </div>
+        <div class="team-body">
+            <div class="photo-caption">
+            <img src="/path/to/photo2.jpg" alt="Team member photo">
+            <div class="photo-caption">
+                <h3>Team Member 2</h3>
+                <p>Role: Role 2</p>
+                <p>Bio: This is a short bio for team member 2.</p>
+            </div>
+            </div>
+        </div>
+        <div class="team-body">
+            <div class="photo-caption">
+            <img src="/path/to/photo3.jpg" alt="Team member photo">
+            <div class="photo-caption">
+                <h3>Team Member 3</h3>
+                <p>Role: Role 3</p>
+                <p>Bio: This is a short bio for team member 3.</p>
+            </div>
+            </div>
+        </div>
+        <div class="team-body">
+            <div class="photo-caption">
+            <img src="/path/to/photo4.jpg" alt="Team member photo">
+            <div class="photo-caption">
+                <h3>Team Member 4</h3>
+                <p>Role: Role 4</p>
+                <p>Bio: This is a short bio for team member 4.</p>
+            </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -32,7 +62,7 @@
     p{
         text-align: center;
     }
-    .team-member {
+    .team-body {
         display: inline-block;
         width: 23%;
         margin: 1%;
