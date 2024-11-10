@@ -7,8 +7,9 @@ This is our hackathon project, where we will build a middleman platform to allow
 * [Python](https://www.python.org)
 * [Flask](https://flask.palletsprojects.com/en/stable/)
 
-## Home Page Dark Mode
-![ee hackathon project image 1](https://github.com/user-attachments/assets/ca97ce6f-3764-4673-bb50-8251c3ca9348)
+## Home Page
+<img width="944" alt="image1" src="https://github.com/user-attachments/assets/0f41ef17-5b0e-450b-9562-4361efebcfe5">
+
 
 
 ## View api here:
