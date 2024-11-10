@@ -14,7 +14,7 @@
         padding: 10px;
         left: 0;
         bottom: 0;
-        width: 100%;
+        width: 90%;
         padding: 20px;
     }
 </style>

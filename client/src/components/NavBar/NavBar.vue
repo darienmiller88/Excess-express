@@ -37,10 +37,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
         padding: 30px 60px;
         color: black;
         
+        position: sticky;
+        top: 0;
+        z-index: 1;
+
         .logo-wrapper{
             display: flex;
             align-items: center;

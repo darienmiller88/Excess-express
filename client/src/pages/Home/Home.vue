@@ -1,15 +1,11 @@
 <script setup lang="ts">
-
+    import Hero from '../../containers/Hero/Hero.vue';
 </script>
 
 <template>
-    <h1>
-        Home agaion
-    </h1>
+    <Hero />
 </template>
 
 <style scoped>
-    h1{
-        color: antiquewhite;
-    }
+   
 </style>
