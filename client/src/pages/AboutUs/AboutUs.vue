@@ -28,7 +28,7 @@
                     <img src="/public/team_profiles/Headshot.jpeg" alt="Team member photo">
                     <div class="photo-caption">
                     <h3>Thaddeus</h3>
-                    <p>Role: Role 1</p>
+                    <p>Product Manager</p>
                     <p>Bio: This is a short bio for team member 1.</p>
                     </div>
                 </div>
