@@ -1,118 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+    import Card from '../../components/Card/Card.vue';
+    import { listings } from '../../state/state';
 
-interface Listing {
-    id: number;
-    logo: string;
-    companyName: string;
-    distance: number;
-    surplus: number;
-    expirationDate: string;
-}
-
-const listings = ref<Listing[]>([
-    {
-        id: 1,
-        logo: "/public/logos/McDonalds.png",
-        companyName: 'McDonalds',
-        distance: 5,
-        surplus: 100,
-        expirationDate: '2023-12-31'
-    },
-    {
-        id: 2,
-        logo: '/public/logos/burger_king.png',
-        companyName: 'Burger King',
-        distance: 10,
-        surplus: 200,
-        expirationDate: '2023-11-30'
-    },
-    {
-        id: 3,
-        logo: '/public/logos/Chick.png',
-        companyName: 'Chick-fil-A',
-        distance: 12,
-        surplus: 150,
-        expirationDate: '2023-12-21'
-    },
-    {
-        id: 4,
-        logo: '/public/logos/Wawa.png',
-        companyName: 'Wawa',
-        distance: 2,
-        surplus: 750,
-        expirationDate: '2023-11-29'
-    },
-    {
-        id: 5,
-        logo: '/public/logos/wendy.png',
-        companyName: "Wendy's",
-        distance: 1400,
-        surplus: 12,
-        expirationDate: '2023-12-01'
-    },
-    {
-        id: 6,
-        logo: '/public/logos/popeyes.png',
-        companyName: 'Popeyes',
-        distance: 2,
-        surplus: 400,
-        expirationDate: '2023-11-17'
-    },
-    {
-        id: 7,
-        logo: '/public/logos/kfc.png',
-        companyName: 'KFC',
-        distance: 19,
-        surplus: 200,
-        expirationDate: '2023-12-16'
-    },
-    {
-        id: 8,
-        logo: '/public/logos/starbucks.png',
-        companyName: 'Starbucks',
-        distance: 21,
-        surplus: 250,
-        expirationDate: '2023-11-11'
-    },
-    {
-        id: 9,
-        logo: '/public/logos/tacobell.png',
-        companyName: "Taco Bell",
-        distance: 16,
-        surplus: 300,
-        expirationDate: '2023-11-3120'
-    },
-    {
-        id: 10,
-        logo: '/public/logos/shakeshack.png',
-        companyName: 'Shake Shack',
-        distance: 11,
-        surplus: 210,
-        expirationDate: '2023-12-14'
-    },
-    {
-        id: 11,
-        logo: '/public/logos/dominos.png',
-        companyName: "Domino's",
-        distance: 7,
-        surplus: 120,
-        expirationDate: '2023-12-18'
-    },
-    {
-        id: 12,
-        logo: '/public/logos/dunkin.png',
-        companyName: "Dunkin' Donuts",
-        distance: 22,
-        surplus: 540,
-        expirationDate: '2023-11-11'
-    }
-    // Add more listings as needed
-]);
-
-const connectWithBusiness = (id: number) => {
-    console.log(`Connecting with business ID: ${id}`);
-};
 </script>
 
 <template>
@@ -121,14 +10,7 @@ const connectWithBusiness = (id: number) => {
     </h1>
     <div class="dashboard">
         <div v-for="listing in listings" :key="listing.id" class="card">
-            <div class="card-header">
-                <img :src="listing.logo" alt="Company Logo" class="company-logo">
-                <h2>{{ listing.companyName }}</h2>
-            </div>
-            <p>Distance: {{ listing.distance }} miles</p>
-            <p>Surplus: {{ listing.surplus }} units</p>
-            <p>Expiration Date: {{ listing.expirationDate }}</p>
-            <button @click="connectWithBusiness(listing.id)">Connect</button>
+            <Card :listing="listing" :isButtonDisabled="false"/>
         </div>
     </div>
 </template>
@@ -145,66 +27,5 @@ const connectWithBusiness = (id: number) => {
     justify-content: center;
 }
 
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
-}
-
-.company-logo {
-    width: 24px;
-    height: 24px;
-    object-fit: cover;
-    margin-right: 8px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.5em;
-    color: #007bff;
-}
-
-p {
-    font-size: 1em;
-    color: #666;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-button:active {
-    transform: scale(0.95);
-}
 </style>
