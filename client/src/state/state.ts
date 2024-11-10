@@ -3,7 +3,7 @@ import { Listing } from "../types/types"
 export const listings: Listing[] = [
     {
         id: 1,
-        logo: "/public/logos/McDonalds.png",
+        logo: "/logos/mcdonalds.png",
         companyName: 'McDonalds',
         distance: 5,
         surplus: 100,
@@ -11,7 +11,7 @@ export const listings: Listing[] = [
     },
     {
         id: 2,
-        logo: '/public/logos/burger_king.png',
+        logo: '/logos/burger_king.png',
         companyName: 'Burger King',
         distance: 10,
         surplus: 200,
@@ -19,7 +19,7 @@ export const listings: Listing[] = [
     },
     {
         id: 3,
-        logo: '/public/logos/Chick.png',
+        logo: '/logos/chick.png',
         companyName: 'Chick-fil-A',
         distance: 12,
         surplus: 150,
@@ -27,7 +27,7 @@ export const listings: Listing[] = [
     },
     {
         id: 4,
-        logo: '/public/logos/Wawa.png',
+        logo: '/logos/wawa.png',
         companyName: 'Wawa',
         distance: 2,
         surplus: 750,
@@ -35,7 +35,7 @@ export const listings: Listing[] = [
     },
     {
         id: 5,
-        logo: '/public/logos/wendy.png',
+        logo: '/logos/wendy.png',
         companyName: "Wendy's",
         distance: 1400,
         surplus: 12,
@@ -43,7 +43,7 @@ export const listings: Listing[] = [
     },
     {
         id: 6,
-        logo: '/public/logos/popeyes.png',
+        logo: '/logos/popeyes.png',
         companyName: 'Popeyes',
         distance: 2,
         surplus: 400,
@@ -51,7 +51,7 @@ export const listings: Listing[] = [
     },
     {
         id: 7,
-        logo: '/public/logos/kfc.png',
+        logo: '/logos/kfc.png',
         companyName: 'KFC',
         distance: 19,
         surplus: 200,
@@ -59,7 +59,7 @@ export const listings: Listing[] = [
     },
     {
         id: 8,
-        logo: '/public/logos/starbucks.png',
+        logo: '/logos/starbucks.png',
         companyName: 'Starbucks',
         distance: 21,
         surplus: 250,
@@ -67,7 +67,7 @@ export const listings: Listing[] = [
     },
     {
         id: 9,
-        logo: '/public/logos/tacobell.png',
+        logo: '/logos/tacobell.png',
         companyName: "Taco Bell",
         distance: 16,
         surplus: 300,
@@ -75,7 +75,7 @@ export const listings: Listing[] = [
     },
     {
         id: 10,
-        logo: '/public/logos/shakeshack.png',
+        logo: '/logos/shakeshack.png',
         companyName: 'Shake Shack',
         distance: 11,
         surplus: 210,
@@ -83,7 +83,7 @@ export const listings: Listing[] = [
     },
     {
         id: 11,
-        logo: '/public/logos/dominos.png',
+        logo: '/logos/dominos.png',
         companyName: "Domino's",
         distance: 7,
         surplus: 120,
@@ -91,7 +91,7 @@ export const listings: Listing[] = [
     },
     {
         id: 12,
-        logo: '/public/logos/dunkin.png',
+        logo: '/logos/dunkin.png',
         companyName: "Dunkin' Donuts",
         distance: 22,
         surplus: 540,
