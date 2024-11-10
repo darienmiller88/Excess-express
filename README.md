@@ -10,8 +10,6 @@ This is our hackathon project, where we will build a middleman platform to allow
 ## Home Page
 <img width="944" alt="image1" src="https://github.com/user-attachments/assets/0f41ef17-5b0e-450b-9562-4361efebcfe5">
 
-
-
 ## View api here:
 *To add later*
 
