@@ -24,7 +24,7 @@
         <div class="team-container">
             <div class="team-body">
             <div class="photo-caption">
-                <img src="/public/team_profiles/chris_yuen_headshot.jpg" alt="Team member photo">
+                <img src="/public/team_profiles/Headshot.jpeg" alt="Team member photo">
                 <div class="photo-caption">
                 <h3>Team Member 1</h3>
                 <p>Role: Role 1</p>
