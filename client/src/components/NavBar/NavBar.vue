@@ -8,13 +8,13 @@
     <nav>
 
         <!-- Logo and Slogan -->
-        <div class="logo-wrapper">
+        <RouterLink to="/" class="logo-wrapper">
             <img :src="logo" alt="logo">
             <div class="app-wrapper">
                 <div class="app-name">Excess Express</div>
                 <div class="slogan">Conserve. Collaborate. Community.</div>
             </div>
-        </div>
+        </RouterLink>
 
         <!-- Links -->
         <div class="links">
@@ -87,8 +87,6 @@
                     cursor: pointer;
                     background-color: rgba(100, 100, 100, 0.8);
                 }
-
-               
             }
         }
 
@@ -107,9 +105,6 @@
                 cursor: pointer;
                 background-color:  rgba(100, 100, 100, 0.8);;
             }
-
         }
-
-
     }
 </style>

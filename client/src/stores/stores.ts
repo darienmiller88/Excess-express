@@ -1,13 +1,13 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import { Listing } from "../types/types"
+import { maxTickets } from "../state/state"
 
 export const chosenListingsStore = defineStore("chosen_listings", () => {
     const chosenListings = ref<Listing[]>([])
 
-    // Adds a listing to local storage, maxes at only 3.
     const addListing = (listing: Listing) => {
-        if (chosenListings.value.length >= 3) {
+        if (chosenListings.value.length >= maxTickets) {
             return
         }
 

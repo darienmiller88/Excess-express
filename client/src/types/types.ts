@@ -6,3 +6,11 @@ export type Listing = {
     surplus: number;
     expirationDate: string;
 }
+
+export type Hacker = {
+    username: string;
+    title: string;
+    githubLink: string;
+    linkedinLink: string;
+    
+}
