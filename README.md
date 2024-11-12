@@ -1,6 +1,10 @@
 # Excess Express
 
-This is our hackathon project, where we will build a middleman platform to allow chains to donate excess food to maller businesses
+This is our hackathon project, where we will build a middleman platform to allow chains to donate excess food to maller businesses.
+
+Website Mission: We recognized that Franchises habitually dispose of excess food, which these franchises in question could have recycled. Our solution, our site, acts as a middleman, putting small businesses that may have a shortage of supplies in connection with big franchises that have excess, feeding two birds with one scone.
+
+Website Value: The website allows smaller, diverse businesses to compete with larger franchisees sustainably. We value this business and the opportunity our website affords them to use this untapped capital to their advantage.
 
 ### Built With:
 * [Vue](https://vuejs.org/)
@@ -9,6 +13,12 @@ This is our hackathon project, where we will build a middleman platform to allow
 
 ## Home Page
 <img width="944" alt="image1" src="https://github.com/user-attachments/assets/0f41ef17-5b0e-450b-9562-4361efebcfe5">
+
+## Dashboard
+<img width="944" alt="image2" src="https://github.com/user-attachments/assets/1d23eb88-6839-4d1a-9d27-ba03d148e8bf">
+
+## Business
+<img width="957" alt="image3" src="https://github.com/user-attachments/assets/328363f5-c3a0-4a42-958e-cd5e0bc9b79f">
 
 ## View api here:
 *To add later*
